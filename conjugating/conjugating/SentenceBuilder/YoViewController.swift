@@ -5,12 +5,15 @@
 //  Created by Daniel Gervase Byomujuni (Student) on 12/11/19.
 //  Copyright © 2019 Daniel Gervase Byomujuni (Student). All rights reserved.
 //
-
+import AVFoundation
 import UIKit
 
 class YoViewController: UIViewController {
 
     @IBOutlet weak var Sentence: UITextView!
+    @IBAction func YoVoice(_ sender: Any) {
+        readMe(myText: Sentence.text!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if (Conjugated) {

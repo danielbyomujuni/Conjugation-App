@@ -13,6 +13,15 @@ class udViewController: UIViewController {
     @IBOutlet weak var Sentence: UITextView!
     @IBOutlet weak var Sentence2: UITextView!
     @IBOutlet weak var Sentence3: UITextView!
+    @IBAction func ElVoice(_ sender: Any) {
+        readMe(myText: Sentence.text!)
+    }
+    @IBAction func EllaVoice(_ sender: Any) {
+        readMe(myText: Sentence2.text!)
+    }
+    @IBAction func UdVoice(_ sender: Any) {
+        readMe(myText: Sentence3.text!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if (Conjugated) {

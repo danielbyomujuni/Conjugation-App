@@ -12,6 +12,12 @@ class VosViewController: UIViewController {
     
     @IBOutlet weak var Sentence: UITextView!
     @IBOutlet weak var Sentence2: UITextView!
+    @IBAction func VosVoice(_ sender: Any) {
+        readMe(myText: Sentence.text!)
+    }
+    @IBAction func VasVoice(_ sender: Any) {
+        readMe(myText: Sentence2.text!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if (Conjugated) {

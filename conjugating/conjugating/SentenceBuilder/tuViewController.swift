@@ -11,6 +11,9 @@ import UIKit
 class tuViewController: UIViewController {
     
     @IBOutlet weak var Sentence: UITextView!
+    @IBAction func TuVoice(_ sender: Any) {
+        readMe(myText: Sentence.text!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if (Conjugated) {
